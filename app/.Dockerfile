@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     curl \
     portaudio19-dev
-COPY requirements.txt requirements.txt
+COPY ../requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 COPY .. .
